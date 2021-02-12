@@ -1,64 +1,63 @@
-body{background-color: #ffffff; margin: 0px !important;}
-#header{
-    background-image: url('https://blog.udacity.com/wp-content/uploads/2020/06/Data-Visualization_Blog-scaled.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;    
-}
-#navbar{
-    margin:auto;
-    text-align: center;    
-    height:10%px;
-    padding:5px;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-gap: auto;
-}
-.navText{
-    font-size: 150%;
-    color: #000000;
-    text-decoration: none;
-}
-.navText{
-    transition: font-size 0.1s; 
-
-}
-.navText:hover{
-    font-size:155%;
-}
-.card-full{
-    height: 720px;     
-}
-.card-half{
-    height:360px;
-    padding:5px;
-}
-#titleHolder{
-    background-color: #0000003a;
-    padding: 5%;
-    margin: 25%;
-    text-align: center;
-    margin-top: 10%;
-    border: 0.5px solid black;
-    box-sizing: border-box;
-}
-#title{
-    font-size:35px;
-}
-.grid-two{
-    display:grid;
-    grid-template-columns: 60% 40%;
-    grid-gap:10px;
-}
-.center{
-    margin:auto;
-    text-align:center;
-}
-.bg-white{
-    background-color: white;
-    color:black;
-}
-.bg-black{
+.bg-main{
     background-color: black;
     color:white;
+    
 }
 
+.navbar-brand{
+    color:white;
+}
+.navbar-brand:hover{
+    color:#c2020b;
+}
+.nav-link{
+    color:whitesmoke;
+}
+
+.nav-link:hover{
+    color:#c2020b;
+    
+}
+.btn-outline-main{
+    background-color: transparent !important;
+    border: 1px solid #c2020b !important;
+    color: #c2020b !important;
+
+}
+.btn-outline-main:hover{
+    background-color: #c2020b !important;
+    border: 1px solid #c2020b !important;
+    color: black !important;
+    
+}
+
+.nav-item{
+    margin-left:10px;
+    border-color:#c2020b;
+}
+.nav-item:hover{
+    transition: border 5s;
+    border-left:1px solid #c2020b;
+    border-right:1px solid #c2020b;
+    
+}
+
+body{
+    background-color:black !important;
+}
+p{
+    font-weight:400;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    font-weight:400;
+    color:white;
+    font-family: 'Open Sans', sans-serif;
+}
+@media only screen and (max-width: 720px) {
+    .nav-item:hover{
+        border:none;        
+        
+    }   
+}
